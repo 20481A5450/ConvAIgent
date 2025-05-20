@@ -1,0 +1,58 @@
+Hello Candidates, Thank you for applying for the AI Engineer role at Jivus AI. We were impressed with your resume and would like to proceed with the next step in our selection process. 
+AI Voice Agent Development Assignment
+Objective: Build an AI-powered voice agent that can handle multi-turn sales conversations. The agent should leverage the following technologies:
+    • Vocode for voice interaction
+    • Twilio for telephony integration
+    • OpenAI GPT-4o Mini for dialogue generation
+    • Deepgram for real-time transcription
+    • ElevenLabs for text-to-speech (TTS) synthesis
+The AI agent should act as a sales representative, engage in conversations with potential customers, and maintain context throughout the conversation.
+
+Requirements:
+    1. Call Handling
+        ◦ The AI voice agent should be able to receive incoming calls and initiate outbound calls using Twilio.
+        ◦ The interaction should be conducted in a natural, human-like manner.
+    2. Speech-to-Text Processing
+        ◦ Use Deepgram to transcribe the user’s speech into text with minimal latency.
+    3. Conversational AI
+        ◦ Use OpenAI GPT-4o Mini to generate responses.
+        ◦ Maintain a multi-turn conversation by keeping track of the conversation history.
+        ◦ Ensure the responses are contextually relevant and sound like a professional sales agent.
+    4. Text-to-Speech Synthesis
+        ◦ Convert AI-generated text into speech using ElevenLabs TTS.
+        ◦ The synthesized speech should be natural and engaging.
+    5. Conversation Logging
+        ◦ Capture and store the complete conversation, including:
+            ▪ Transcribed customer input
+            ▪ AI-generated responses
+            ▪ Timestamps for each exchange
+            ▪ Call metadata (duration, phone number, etc.)
+        ◦ Store conversations in a structured format (JSON, database, or a preferred storage method).
+    6. Sales-Oriented Dialogue Flow
+        ◦ The AI should be able to:
+            ▪ Greet the customer professionally.
+            ▪ Ask open-ended questions to understand customer needs.
+            ▪ Present relevant sales pitches dynamically.
+            ▪ Handle objections and answer queries.
+
+Bonus Points:
+    • Provide a simple UI or dashboard to monitor live conversations.
+    • Optimize response times for real-time engagement.
+
+Deliverables:
+    1. A working prototype of the AI voice agent.
+    2. A short audio demo showcasing a sample conversation involving atleast 7-8 turns of conversation between you and voice agent
+    3. Source code (GitHub or a zip file) with setup instructions. Reply github link on indeed itself
+    4. Documentation explaining the architecture, APIs used, and deployment instructions.
+
+Evaluation Criteria:
+    • Functionality: How well does the AI agent perform multi-turn conversations?.
+    • Code Quality: Is the code well-structured and documented?
+Deadline: 1 week
+
+All names mentioned above provides free credits and if that free credits is not available you can use any other alternative.
+I am interested to see the integration of these tools with vocode (free and open source) so make sure you use that.
+
+Upload it on github and reply with that link here on this email chain
+
+Good luck! We’re excited to see your implementation.

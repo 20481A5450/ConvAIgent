@@ -6,13 +6,13 @@ import os
 
 # Load environment variables from .env file
 load_dotenv()
+api_key = os.getenv("GEMINI_API_KEY")
+if not api_key:
+    raise {"error": "GEMINI_API_KEY not found in environment variables."}
+genai.configure(api_key=api_key)
 
 def list_gemini_models():
     try:
-        api_key = os.getenv("GEMINI_API_KEY")
-        if not api_key:
-            return {"error": "GEMINI_API_KEY not found in environment variables."}
-        genai.configure(api_key=api_key)
         models = genai.list_models()
         model_list = []
         for m in models:
@@ -25,3 +25,12 @@ def list_gemini_models():
     except Exception as e:
         return {"error": str(e)}
 
+async def generate_text(prompt: str) -> str:
+    try:
+        model = genai.GenerativeModel(model_name="gemini-1.5-flash-latest")
+        if not prompt:
+            raise ValueError("Prompt cannot be empty.")
+        response = model.generate_content(prompt)
+        return response.text
+    except Exception as e:
+        return f"Error: {str(e)}"
